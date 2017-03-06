@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% for (var i = 0; i < cur_lists.length; i++) { %>
+    	<div>
+    		<h1><%= cur_lists[i].title %></h1>
+    		<p><%= cur_lists[i].digest %></p>
+    		<a href=""><%= cur_lists[i].content_url  %></a>
+    	</div>
+    	
+    <% };  %>
+    <p><%= text %></p>
+  </body>
+</html>
